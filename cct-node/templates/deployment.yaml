@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: dagonzadub/cct-node:main
+        image: dagonzadub/cct-node:{{ .Values.image.tag }}
         ports:
         - containerPort: 3000
